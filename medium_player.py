@@ -1,10 +1,10 @@
 import random
 from player import Player
 
-class AggressivePlayer(Player):
+class MediumPlayer(Player):
     def __init__(self):
         super().__init__()
-        self.aggression_level = [0, 1, 1, 1]
+        self.aggression_level = [0, 0, 1, 1]
 
     def play_again(self):
         return random.getrandbits(1)
